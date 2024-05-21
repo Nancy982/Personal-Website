@@ -1,0 +1,49 @@
+/* src/SkillsCard.css */
+.card-container {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 450px; /* Set this to match the diameter of the profile picture */
+    height: 450px; /* Set this to match the diameter of the profile picture */
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.8s;
+  }
+  
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #99898c;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Center the text inside the card */
+  }
+  
+  .card-front {
+    background-color: #e5fffa;
+    color: #000;
+  }
+  
+  .card-back {
+    background-color: #B2A0A3;
+    color: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  .card-container:hover .card,
+  .card-container:focus .card {
+    transform: rotateY(180deg);
+  }
+  
+  

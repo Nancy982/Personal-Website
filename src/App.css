@@ -1,0 +1,14 @@
+/* src/app.css */
+.App {
+  text-align: center;
+  font-family: 'Arial, sans-serif';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FFE5EA; /* If you want the background color to be specific to the app */
+}
