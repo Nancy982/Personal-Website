@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://nancy982.github.io/Personal-Website",
+  "homepage": "https://github.com/Nancy982/Personal-Website.git",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
