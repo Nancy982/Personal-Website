@@ -1,0 +1,68 @@
+/* src/AboutMe.css */
+.aboutme-card-container {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .aboutme-card {
+    width: 450px; /* Set this to match the diameter of the profile picture */
+    height: 450px; /* Set this to match the diameter of the profile picture */
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.8s;
+  }
+  
+  .aboutme-card-front,
+  .aboutme-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #99898c;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Center the text inside the card */
+    font-size: 1.5em; /* Match font size with SkillsCard */
+  }
+  
+  .aboutme-card-front {
+    background-image: url('../public/office.webp'); /* Correct path to the image */
+    background-position: center;
+    background-size: cover;
+    color: #B2A0A3; /* White text for better contrast */
+    ; /* White text for better contrast */
+    padding-bottom: 270px; /* Adjust this value to raise the text higher */
+  }
+  
+  .aboutme-card-back {
+    background-color: #B2A0A3; /* Updated background color */
+    color: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  .aboutme-card-container:hover .aboutme-card,
+  .aboutme-card-container:focus .aboutme-card {
+    transform: rotateY(180deg);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  

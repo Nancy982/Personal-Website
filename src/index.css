@@ -1,0 +1,41 @@
+/* src/index.css */
+
+/* Import the Happy Monkey font */
+@font-face {
+  font-family: 'Happy Monkey';
+  src: url('../public/happy-monkey/HappyMonkey-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Set the background color of the webpage */
+body {
+  background-color: #FFE5EA;
+  margin: 0;
+  font-family: 'Happy Monkey', Arial, sans-serif;
+}
+
+/* Bouncing animation keyframes */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Apply bouncing animation to the image */
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Remove blinking cursor */
+* {
+  caret-color: transparent;
+}
+
+
