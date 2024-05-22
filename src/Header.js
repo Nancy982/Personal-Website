@@ -1,7 +1,11 @@
 // src/Header.js
 import React from 'react';
+<<<<<<< HEAD
 import './index.css'; // Import the global CSS file
 import profileImage from './profile.webp'; // Import the profile image
+=======
+import './index.css'; // Make sure to import the CSS file
+>>>>>>> 8ba662c74f0314bcd9607aee13b3041f6b01c4af
 
 const Header = () => {
   const headerContainerStyles = {
@@ -21,8 +25,12 @@ const Header = () => {
     fontSize: '7.5em', // 3 times the original size of 2.5em
     margin: '20px 0', // Add margin to space out from the profile picture and buttons
     fontFamily: 'Happy Monkey, Arial, sans-serif',
+<<<<<<< HEAD
   color: '#B2A0A3', /* White text for better contrast */
     color: '#B2A0A3', // Update name color here
+=======
+    color: '#ccb7bb', // Update name color here
+>>>>>>> 8ba662c74f0314bcd9607aee13b3041f6b01c4af
     textAlign: 'center'
   };
 
@@ -50,8 +58,13 @@ const Header = () => {
     margin: '10px 0',
     fontSize: '1.2em',
     fontFamily: 'Happy Monkey, Arial, sans-serif',
+<<<<<<< HEAD
     color: '#fff', // Text color
     backgroundColor: '#B2A0A3', // Button color
+=======
+    color: '#ffffff', // Text color
+    backgroundColor: '#b2a0a3', // Button color
+>>>>>>> 8ba662c74f0314bcd9607aee13b3041f6b01c4af
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
@@ -61,6 +74,7 @@ const Header = () => {
   return (
     <div style={headerContainerStyles}>
       <header style={headerStyles}>
+<<<<<<< HEAD
         <img src={profileImage} alt="Profile" style={imgStyles} className="bounce" />
         <h1 style={h1Styles}>Nancy Medina</h1>
       </header>
@@ -72,6 +86,22 @@ const Header = () => {
           LinkedIn
         </a>
         <a href="https://github.com/Nancy982" target="_blank" rel="noopener noreferrer" style={buttonStyles}>
+=======
+        <img src="/profile.webp" alt="Profile" style={imgStyles} className="bounce" />
+        <h1 style={h1Styles}>Nancy Medina</h1>
+      </header>
+      <div style={buttonContainerStyles}>
+        <a href="/Resume_Nancy_Medina.pdf" style={buttonStyles}>
+          <i className="fas fa-file-alt" style={{ marginRight: '10px' }}></i>
+          Resume
+        </a>
+        <a href="https://www.linkedin.com/in/nancy-medina-232100115" style={buttonStyles}>
+          <i className="fab fa-linkedin" style={{ marginRight: '10px' }}></i>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Nancy982" style={buttonStyles}>
+          <i className="fab fa-github" style={{ marginRight: '10px' }}></i>
+>>>>>>> 8ba662c74f0314bcd9607aee13b3041f6b01c4af
           GitHub
         </a>
       </div>
@@ -92,6 +122,7 @@ export default Header;
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -102,3 +133,5 @@ export default Header;
 
 
 
+=======
+>>>>>>> 8ba662c74f0314bcd9607aee13b3041f6b01c4af
